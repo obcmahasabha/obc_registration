@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.upload-text {
+  font-family: 'Hind', sans-serif;
+ 
+}
+
+.my-css {
+  font-family: 'Khand', sans-serif;
+}
+
+@media (max-width:500px) {
+  .my-css {
+    font-size: 15px
+  }
+}
+
+.profile {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  /* height: 70px */
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: poppins; */
+}
+
