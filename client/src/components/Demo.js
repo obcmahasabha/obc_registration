@@ -24,7 +24,7 @@ const BASE_URL = process.env.REACT_APP_SERVER_URL;
 const Demo = () => {
   const [userData, setUserData] = useState(null);
   const cardRef = useRef(null); // Reference for the card
-  const pageUrl = window.location.href;
+  const pageUrl = "https://registration.obcmahasabha.org.in";
 
   useEffect(() => {
     const fetchUserData = async () => {
