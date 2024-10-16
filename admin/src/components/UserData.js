@@ -34,6 +34,7 @@ const UserData = () => {
             <thead>
               <tr className="bg-gray-800 text-white">
                 <th className="py-3 px-4 text-left">#</th>
+                <th className="py-3 px-4 text-left">ID</th>
                 <th className="py-3 px-4 text-left">Name</th>
                 <th className="py-3 px-4 text-left">Father</th>
                 <th className="py-3 px-4 text-left">Phone Number</th>
@@ -65,6 +66,7 @@ const UserData = () => {
               {users.map((user, index) => (
                 <tr key={user._id} className="border-t border-gray-200">
                   <td className="py-3 px-4">{index + 1}</td>
+                  <td className="py-3 px-4">{user.randomCode}</td>
                   <td className="py-3 px-4">{user.name}</td>
                   <td className="py-3 px-4">{user.father}</td>
                   <td className="py-3 px-4">{user.number}</td>
