@@ -112,7 +112,7 @@ const Demo = () => {
       } finally {
         // Reset styles and show share buttons again after download
         cardRef.current.style.backgroundColor = "";
-        cardRef.current.style.fontFamily = "";
+        cardRef.current.style.fontFamily = "khand";
         
       }
     }
