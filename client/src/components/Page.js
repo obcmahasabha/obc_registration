@@ -70,6 +70,7 @@ const Page = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(loading);
+    if (loading) return;
     // VALIDATION FOR ALL THE FEILDS
     const requiredFields = [
       { name: "name", label: "सदस्य का नाम" },
@@ -649,9 +650,12 @@ const Page = () => {
 
         <button
           type="submit"
+          onClick={handleSubmit}
+          disabled={loading} 
           className="w-full bg-red-600 rounded-lg shadow-xl shadow-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
         >
           ओबीसी महासभा की सदस्यता ग्रहण करें !
+          {loading ? "" : ""}
         </button>
       </form>
       <Toaster />
