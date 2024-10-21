@@ -25,7 +25,7 @@ const usersSchema = new mongoose.Schema({
   screenshot: { type: String },
   sagetan: { type: String },
   randomCode:{type:Number}
-});
+},{ timestamps: true });
 
 const usersModel = mongoose.model("users", usersSchema);
 export default usersModel;
