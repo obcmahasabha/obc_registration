@@ -125,7 +125,7 @@ const Demo = () => {
       <div ref={cardRef}>
         <img src={assets.OBC_Header} alt="header" />
         <p className="flex items-center justify-center text-2xl md:text-6xl font-extrabold my-css mt-2">
-          सदस्यता कार्ड - 2024
+          सदस्यता कार्ड - 2025
         </p>
         <div className="flex justify-around mt-4">
           <div>
